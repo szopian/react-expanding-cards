@@ -5,6 +5,7 @@ export const GlobalStyle = styled.div`
   margin: 0;
   box-sizing: border-box;
 `;
+
 export const Body = styled.body`
   font-family: "Muli", sans-serif;
   display: flex;

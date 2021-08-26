@@ -1,10 +1,22 @@
 import Panel from "./components/Panel";
-import { Wrapper } from "./Styled";
+import { Wrapper, Container } from "./Styled";
+
+import ImageA from "./images/cem-ersozlu-bR9abI2wC88-unsplash.jpg";
+import ImageB from "./images/jakob-rosen-R3Kt-VGPwUI-unsplash.jpg";
+import ImageC from "./images/jonathan-ford-m6Ku4ZdI-yY-unsplash.jpg";
+import ImageD from "./images/matteo-catanese-9o2rxHYRyro-unsplash.jpg";
+import ImageE from "./images/pexels-bryan-gomes-3977529.jpg";
 
 function App() {
   return (
     <Wrapper>
-      <Panel />
+      <Container>
+        <Panel BgImg={ImageA} />
+        <Panel BgImg={ImageB} />
+        <Panel BgImg={ImageC} />
+        <Panel BgImg={ImageD} />
+        <Panel BgImg={ImageE} />
+      </Container>
     </Wrapper>
   );
 }

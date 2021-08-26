@@ -1,23 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import Image from "../images/cem-ersozlu-bR9abI2wC88-unsplash.jpg";
-import { Container } from "../Styled";
 
-export default function Panel() {
-  const [isActive, setActive] = useState("false");
-
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
-
-  return (
-    <Container>
-      <ImgPanel
-        className={isActive ? ImgPanelActive : ImgPanel}
-        onClick={handleToggle}
-      />
-    </Container>
-  );
+export default function Panel({ BgImg }) {
+  return <ImgPanel BgImage={BgImg} />;
 }
 
 const ImgPanel = styled.div`
@@ -31,18 +16,10 @@ const ImgPanel = styled.div`
   margin: 10px;
   position: relative;
   --webkit-transition: all 700ms ease-in;
-  background-image: url(${Image});
+  background-image: url(${(props) => props.BgImage});
   flex: 0.5;
+
+  &&:active {
+    flex: 5;
+  }
 `;
-
-const ImgPanelActive = styled(ImgPanel)`
-  flex: 5;
-`;
-
-// const Heading = styled.h3``;
-
-// function Panel() {
-//   return <ImgPanel>img</ImgPanel>;
-// }
-
-// export default Panel;

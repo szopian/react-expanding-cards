@@ -6,7 +6,7 @@ export const GlobalStyle = styled.div`
   box-sizing: border-box;
 `;
 
-export const Body = styled.body`
+export const Wrapper = styled.div`
   font-family: "Muli", sans-serif;
   display: flex;
   align-items: center;

@@ -1,10 +1,11 @@
 import Panel from "./components/Panel";
+import { Wrapper } from "./Styled";
 
 function App() {
   return (
-    <Panel>
-      <h1>Cards Expanding Comming Soon:]]]</h1>
-    </Panel>
+    <Wrapper>
+      <Panel />
+    </Wrapper>
   );
 }
 

@@ -15,7 +15,7 @@ const ImgPanel = styled.div`
   cursor: pointer;
   margin: 10px;
   position: relative;
-  --webkit-transition: all 700ms ease-in;
+  transition: all 0.7s ease-in;
   background-image: url(${(props) => props.BgImage});
   flex: 0.5;
 

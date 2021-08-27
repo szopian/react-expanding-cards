@@ -22,4 +22,11 @@ const ImgPanel = styled.div`
   &&:active {
     flex: 5;
   }
+
+  @media (max-width: 480px) {
+    &&:nth-of-type(5),
+    &&:nth-of-type(6) {
+      display: none;
+    }
+  }
 `;

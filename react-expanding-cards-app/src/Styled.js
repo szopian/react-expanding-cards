@@ -18,4 +18,8 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   display: flex;
   width: 90vw;
+
+  @media (max-width: 480px) {
+    width: 100vw;
+  }
 `;

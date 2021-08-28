@@ -19,7 +19,11 @@ const ImgPanel = styled.div`
   background-image: url(${(props) => props.BgImage});
   flex: 0.5;
 
-  &&:active {
+  /* &&:active {
+    flex: 5;
+  } */
+
+  &&.activeFlex {
     flex: 5;
   }
 
